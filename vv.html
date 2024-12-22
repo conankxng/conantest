@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vv.css" />
+    <title>The Pet Hub</title>
+    <link rel="icon" type="image/png" href="img/Brown and Red Paw Flat Illustrative Pets Logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="custom-background">
+            <div class="logo">
+                <img src="img/Brown and Red Paw Flat Illustrative Pets Logo.png" alt="Logo" width="120px" />
+            </div>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">หน้าหลัก</a></li>
+                <li class="dropdown">
+                    <a href="cat.html">สินค้า</a>
+                    <ul class="dropdown-content">
+                        <li><a href="cat.html">อาหารแมว</a></li>
+                        <li><a href="dog.html">อาหารสุนัข</a></li>
+                        <li><a href="cat3.html">ทรายแมว</a></li>
+                        <li><a href="cat3.html">ของเล่นแมว</a></li>
+                        <li><a href="cat3.html">ของเล่นสุนัข</a></li>
+                    </ul>
+                </li>   
+                <li><a href="services.html">โปรโมชั่น</a></li>
+                <li><a href="apropos.html">ข่าวสารและบทความ</a></li>
+                <li class="dropdown">
+                    <a href="https://www.facebook.com/Anupxng" target="_blank">ติดต่อเรา</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.facebook.com/Anupxng" target="_blank">
+                            <img src="img/Facebook_icon.svg.png" alt="Facebook" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Facebook
+                        </a></li>
+                        <li><a href="https://www.instagram.com/nxxki_pxhkkkl/" target="_blank">
+                            <img src="img/1200px-Instagram_icon.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Instagram
+                        </a></li>
+                        <li><a href="https://www.youtube.com/@conankxng4105" target="_blank">
+                            <img src="img/1384060.png" alt="Youtube" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Youtube
+                        </a></li>
+                        <li><a href="https://line.me/ti/p/Fu65vvjJ5H" target="_blank">
+                            <img src="img/ดาวน์โหลด.png" alt="Line" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Line
+                        </a></li>
+                    </ul>
+                </li>  
+            </ul>
+            <div class="login">
+                <button onclick="window.location.href=''">บริการสัตว์เลี้ยง</button>
+                <img src="img/ดาวน์โหลด (6)-Photoroom.png" alt="" width="60" height="60" />
+            </div>
+        </div>
+    </header>
+    <div class="ssnss">
+        <div class="csss">
+            <center>
+                <h1 style="color: #ffffff;">บริการดูแลสัตว์เลี้ยง</h1>
+            </center>
+        </div>
+        <div class="ggss">
+            <center>
+                <h3 id="typing-text" style="color: #ffffff;"></h3>
+            </center>
+        </div>
+
+        <script>
+            const text = "ยินดีต้อนรับสู่บริการดูแลสัตว์เลี้ยงของเรา เราเชี่ยวชาญในการให้บริการที่ตอบสนองความต้องการของสัตว์เลี้ยงและเจ้าของ เพื่อให้ทั้งคู่มีความสุขและปลอดภัย";
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    document.getElementById("typing-text").innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 70);
+                }
+            }
+
+            type();
+        </script>
+    </div>
+    <div class="ffmm">
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/FFF.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>การดูแลสัตว์เลี้ยงที่บ้าน (Pet Sitting)</h1>
+                    <h2>บริการดูแลสัตว์เลี้ยงที่บ้านของลูกค้า ซึ่งรวมถึงการให้อาหาร เดินเล่น และดูแลความสะอาด<br>
+                        โดยทีมงานที่มีความชำนาญและรักสัตว์ เพื่อให้สัตว์เลี้ยงรู้สึกสบายใจและปลอดภัยในบ้านของตนเอง</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/saa.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>การเดินสุนัข (Dog Walking)</h1>
+                    <h2>เรามีบริการเดินสุนัขที่มีความยืดหยุ่น ตอบสนองความต้องการของเจ้าของ โดยสามารถเลือกเวลา ‎ ‎ ‎
+                        ‎<br>
+                        ระยะทางที่เหมาะสมสำหรับการเดินสุนัขในพื้นที่ใกล้เคียงหรือสวนสาธารณะ<br>
+                        เพื่อให้สุนัขได้รับการออกกำลังกายและเข้าสังคมอย่างเพียงพอ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/ffss.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>โรงแรมสัตว์เลี้ยง (Pet Boarding)</h1>
+                    <h2>เราให้บริการที่พักสำหรับสัตว์เลี้ยงในระหว่างที่เจ้าของไม่อยู่ โดยมีสิ่งอำนวยความสะดวกที่ปลอดภัย
+                        ‎<br>
+                        รวมถึงการตรวจสอบสุขภาพของสัตว์เลี้ยงอย่างสม่ำเสมอสัตว์เลี้ยงจะได้รับการดูแลและความรัก<br>อย่างเต็มที่ในระหว่างการเข้าพัก
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/sd.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>บริการสุขภาพสัตว์เลี้ยง (Pet Health Services)</h1>
+                    <h2>บริการตรวจสุขภาพสัตว์เลี้ยงอย่างสม่ำเสมอ รวมถึงการฉีดวัคซีนและการให้คำปรึกษาเกี่ยวกับ ‎ ‎ ‎ ‎ ‎
+                        ‎ ‎
+                        ‎<br>การดูแลสุขภาพและโภชนาการ เพื่อให้สัตว์เลี้ยงของคุณมีสุขภาพดีและแข็งแรงรวมถึงการ<br>
+                        ตรวจสอบสุขภาพของสัตว์เลี้ยงอย่างสม่ำเสมอสัตว์เลี้ยงจะได้รับการดูแลและความรัก<br>อย่างเต็มที่ในระหว่างการเข้าพัก
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/sa.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>การอบรมสัตว์เลี้ยง (Pet Training)</h1>
+                    <h2>มีคอร์สการอบรมสำหรับสัตว์เลี้ยง
+                        เพื่อช่วยให้สัตว์เลี้ยงเรียนรู้คำสั่งพื้นฐานและพัฒนาความสามารถ‎<br>ในการเข้าสังคมอย่างเหมาะสม
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vvaa">
+                <div class="conan">
+                    <img src="img/aq.jpg" alt="" class="image">
+                </div>
+                <div class="text">
+                    <h1>บริการนวดและการบำบัด (Pet Massage and Therapy)</h1>
+                    <h2>บริการนวดและการบำบัดสำหรับสัตว์เลี้ยง
+                        ซึ่งช่วยให้สัตว์เลี้ยงผ่อนคลายและบรรเทาอาการเจ็บปวด<br>โดยผู้เชี่ยวชาญที่มีประสบการณ์ในการดูแลสุขภาพสัตว์
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

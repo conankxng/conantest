@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Pet Hub</title>
+    <link rel="icon" type="image/png" href="img/Brown and Red Paw Flat Illustrative Pets Logo.png">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: radial-gradient(circle, #ffdfa0, #ffc560);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        overflow: hidden;
+        font-size: 15px;
+    }
+
+    #text {
+        font-size: 3rem;
+        white-space: pre-wrap;
+    }
+</style>
+
+<body>
+    <div>
+        <div id="text"></div>
+        <audio id="typeSound" src=""></audio>
+        <audio id="backgroundAudio" loop>
+            <source src="index.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        const messages = [
+            "Welcome to The Pet Hub!!!",
+            "ยินดีตอนรับสู่เว็บไซต์ของเรา",
+            "เว็บไซต์ของเราบริการเกี่ยวกับสัตว์เลี้ยง!!!"
+        ];
+        const audioUrl = ""; 
+
+        const textElement = document.getElementById("text");
+        const typeSound = document.getElementById("typeSound");
+        const audioElement = document.getElementById("backgroundAudio");
+        let messageIndex = 0;
+
+        function typeMessage(message, callback) {
+            let i = 0;
+            textElement.textContent = "";
+            const interval = setInterval(() => {
+                textElement.textContent += message[i];
+                typeSound.currentTime = 0; 
+                typeSound.play(); 
+                i++;
+                if (i >= message.length) {
+                    clearInterval(interval);
+                    setTimeout(callback, 1000); 
+                }
+            }, 100);
+        }
+
+        function showMessages() {
+            if (messageIndex < messages.length) {
+                typeMessage(messages[messageIndex], () => {
+                    messageIndex++;
+                    showMessages();
+                });
+            } else {
+                audioElement.src = audioUrl;
+                audioElement.play(); 
+
+                setTimeout(() => {
+                    window.location.href = "index.html"; 
+                }, 3000); 
+            }
+        }
+
+        window.onload = function() {
+            showMessages();
+        };
+
+        // Adding user interaction to trigger audio play
+        document.body.addEventListener('click', () => {
+            if (audioElement.paused) {
+                audioElement.play(); // Play audio when user clicks anywhere on the page
+            }
+        });
+    </script>
+</body>
+</html>

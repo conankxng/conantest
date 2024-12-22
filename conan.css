@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.workshop-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: white;
+}
+
+.blue-section {
+  background-color: #2a53c1;
+}
+
+.red-section {
+  background-color: #ff4b4b;
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+.move-up {
+  position: relative;
+  top: -50px; /* ปรับค่าตามต้องการ */
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Pet Hub</title>
+    <link rel="icon" type="image/png" href="img/Brown and Red Paw Flat Illustrative Pets Logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="custom-background">
+            <div class="logo">
+                <img src="img/Brown and Red Paw Flat Illustrative Pets Logo.png" alt="Logo" width="120px" />
+            </div>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">หน้าหลัก</a></li>
+                <li class="dropdown">
+                    <a href="cat.html">สินค้า</a>
+                    <ul class="dropdown-content">
+                        <li><a href="cat.html">อาหารแมว</a></li>
+                        <li><a href="dog.html">อาหารสุนัข</a></li>
+                        <li><a href="cat3.html">ทรายแมว</a></li>
+                        <li><a href="cat3.html">ของเล่นแมว</a></li>
+                        <li><a href="cat3.html">ของเล่นสุนัข</a></li>
+                    </ul>
+                </li>
+                <li><a href="vv.html">บริการดูแลสัตว์เลี้ยง</a></li>
+                <li><a href="apropos.html">ข่าวสารและบทความ</a></li>
+                <li class="dropdown">
+                    <a href="https://www.facebook.com/Anupxng" target="_blank">ติดต่อเรา</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.facebook.com/Anupxng" target="_blank">
+                            <img src="img/Facebook_icon.svg.png" alt="Facebook" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Facebook
+                        </a></li>
+                        <li><a href="https://www.instagram.com/nxxki_pxhkkkl/" target="_blank">
+                            <img src="img/1200px-Instagram_icon.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Instagram
+                        </a></li>
+                        <li><a href="https://www.youtube.com/@conankxng4105" target="_blank">
+                            <img src="img/1384060.png" alt="Youtube" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Youtube
+                        </a></li>
+                        <li><a href="https://line.me/ti/p/Fu65vvjJ5H" target="_blank">
+                            <img src="img/ดาวน์โหลด.png" alt="Line" style="width: 20px; height: 20px; margin-right: 8px;">
+                            Line
+                        </a></li>
+                    </ul>
+                </li>                                            
+            </ul>
+            <div class="login">
+                <button onclick="window.location.href='login.html'">Login</button>
+                <img src="img/ดาวน์โหลด (6)-Photoroom.png" alt="" width="60" height="60" />
+            </div>
+        </div>
+    </header>
+    <div class="text">
+        <div class="left">
+            <h1 id="typing-text"></h1>
+
+            <script>
+                const text = "Welcome To my The Pet Hub";
+                let index = 0;
+
+                function type() {
+                    if (index < text.length) {
+                        document.getElementById("typing-text").innerHTML += text.charAt(index);
+                        index++;
+                        setTimeout(type, 150);
+                    }
+                }
+
+                type();
+            </script>
+            <h1>
+                <marquee direction="right"><span>บริการ Delivery ให้บริการจัดส่งได้ตลอด 24 ชั่วโมง</span></marquee>
+            </h1>
+            <p>
+            <h2>
+                ร้านของเรามีบริการดูแลสัตว์เลี้ยงทั้งที่บ้านและที่คลินิก รวมถึงพาสุนัขเดินเล่นและโรงแรมที่พักสัตว์
+                <br>และจำหน่ายอาหารสัตว์ ของเล่น และอุปกรณ์ต่างๆ
+                เพื่อให้สัตว์เลี้ยงของคุณมีความสุขและสุขภาพดีตลอดเวลา
+            </h2>
+            </p>
+            <button onclick="window.location.href='vv.html';">บริการดูแลสัตว์เลี้ยง&#8594;</button>
+        </div>
+        <div class="right">
+            <img src="img/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (3).gif" alt="Background" width="1000px" />
+        </div>
+    </div>
+    <div class="mooa">
+        <div class="dooc">
+            <h2 class="cood">คู่มือดูแลสัตว์เลี้ยงสำหรับมือใหม่</h2>
+            <div class="image-container">
+                <a href="dogg.html">
+                    <img src="img/11.png" alt="Image 1">    
+                </a>
+                <a href="catt.html">
+                <img src="img/22.png" alt="Image 2">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mood">
+        <img src="img/33.png" alt="">
+    </div>
+    <div class="koon">
+        <img src="img/12.png" alt="">
+        <img src="img/13.png" alt="">
+        <img src="img/14.png" alt="">
+        <img src="img/15.png" alt="">
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>ยินดีต้อนรับสู่ The Pet Hub <br>ศูนย์รวมบริการและผลิตภัณฑ์สำหรับสัตว์เลี้ยงที่คุณรัก!
+                <br>เรามุ่งมั่นให้บริการที่ดีที่สุด ด้วยผลิตภัณฑ์คุณภาพสูง<br>
+                ทั้งอาหารสัตว์เลี้ยงและอุปกรณ์ที่ตอบโจทย์ทุกความต้องการ<br>ของสัตว์เลี้ยง
+                นอกจากนี้ยังมีบริการดูแลสัตว์เลี้ยง
+                <br>เช่น การดูแลที่บ้าน, การเดินเล่น, และโรงแรมสัตว์เลี้ยง
+                <br>เพื่อให้สัตว์เลี้ยงของคุณได้รับการดูแลอย่างดีเสมอ ที่
+                The Pet Hub <br>เราเชื่อว่าสัตว์เลี้ยงคือเพื่อนที่ดีที่สุดและพร้อมมอบความรักให้กับทุกตัวค่ะ
+            </p>
+        </div>
+        <div class="column">
+            <h2>รู้จักเรา</h2>
+            <p>ที่ The Pet Hub <br>เราคือผู้เชี่ยวชาญในการดูแลและให้บริการสัตว์เลี้ยง
+                <br>ด้วยประสบการณ์และความรักที่มีต่อสัตว์
+                เรามุ่งมั่น<br>ที่จะสร้างสรรค์ผลิตภัณฑ์และบริการที่ดีที่สุด <br>เช่น อาหารคุณภาพสูง, อุปกรณ์เสริม
+                และบริการดูแลสัตว์เลี้ยง <br>ที่จะช่วยให้สัตว์เลี้ยงของคุณมีความสุขและสุขภาพดี<br>
+                ทีมงานของเราทุ่มเทในการดูแลอย่างใส่ใจและปลอดภัย <br>พร้อมมอบประสบการณ์ที่ดีให้แก่ลูกค้าทุกท่าน
+                <br>เพราะเรารู้ว่าการดูแลสัตว์เลี้ยงคือความรักที่แท้จริงค่ะ
+            </p>
+        </div>
+        <div class="column">
+            <h2>บริการลูกค้า</h2>
+            <p>ที่ The Pet Hub <br>เรามุ่งมั่นให้บริการลูกค้าด้วยความเอาใจใส่และมืออาชีพ
+                <br>พร้อมช่องทางการติดต่อที่สะดวกสบาย <br>ได้แก่
+                ช่องทางการติดต่อ:<br> โทรศัพท์ 0981401032 <br>อีเมล ariyayam2429@gmail.com <br>ไลน์ Anupxng_88
+                <br>แชทออนไลน์บนเว็บไซต์
+                การสั่งซื้อและการจัดส่ง: สั่งซื้อออนไลน์และจัดส่งรวดเร็วทั่วประเทศ<br>
+                การคืนสินค้าและการรับประกัน: คืนสินค้าได้ภายในระยะเวลาที่กำหนด พร้อมรับประกันคุณภาพ<br>
+                บริการหลังการขาย: ทีมงานพร้อมช่วยเหลือและแก้ไขปัญหาหลังการซื้อสินค้า<br>
+                เรามุ่งมั่นที่จะให้บริการที่ดีที่สุด เพราะความพึงพอใจของคุณคือเป้าหมายของเรา
+            </p>
+        </div>
+    </div>
+</body>
+</html>
